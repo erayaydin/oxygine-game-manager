@@ -7,7 +7,7 @@ include_directories(${OXYGINE_INCLUDE_DIRS})
 link_directories(${OXYGINE_LIBRARY_DIRS})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-add_executable(GameName ../src/entry_point.cpp ../src/resource.cpp ../src/gamemanager.cpp ../src/resource.h  ../src/gamemanager.h )
+add_executable(GameName ../src/entry_point.cpp ../src/resource.cpp ../src/gamemanager.cpp ../src/gamename.cpp ../src/resource.h  ../src/gamemanager.h ../src/gamename.h )
 
 if (WIN32) #disable console mode for VC++
 	set_target_properties(GameName PROPERTIES WIN32_EXECUTABLE TRUE)
